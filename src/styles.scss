@@ -28,3 +28,22 @@ button {
     background-color: var(--gray-background);
   }
 }
+
+input[type="text"] {
+  width: 100%;
+  background-color: white;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+
+  &:focus{
+    outline: 1px solid var(--primary-hover-background);
+  }
+
+  &:read-only {
+    background-color: var(--gray-background);
+    outline: 1px solid var(--secondary-gray-background);
+    cursor: not-allowed;
+  }
+}

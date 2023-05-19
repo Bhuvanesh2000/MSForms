@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-background: #77b6b8;
+  --secondary-background: #03787c;
+  --primary-hover-background: #014446;
+  --gray-background: #f0f0f0;
+  --secondary-gray-background: #bbbbbb;
+}
+
+body {
+  background-color: var(--primary-background);
+}

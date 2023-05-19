@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ButtonComponent } from './utils/button/button.component';
 import { TextInputComponent } from './utils/text-input/text-input.component';
+import { DateComponent } from './utils/date/date.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ButtonComponent,
-    TextInputComponent
+    TextInputComponent,
+    DateComponent
   ],
   imports: [
     BrowserModule,

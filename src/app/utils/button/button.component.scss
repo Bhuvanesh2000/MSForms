@@ -1,0 +1,13 @@
+:host button {
+  display: flex;
+  padding: 10px 30px;
+  background-color: var(--secondary-background);
+  width: max-content;
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+
+  &:hover {
+    background-color: var(--primary-hover-background);
+  }
+}

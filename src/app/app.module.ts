@@ -7,6 +7,7 @@ import { ButtonComponent } from './utils/button/button.component';
 import { TextInputComponent } from './utils/text-input/text-input.component';
 import { DateComponent } from './utils/date/date.component';
 import { NavComponent } from './nav/nav.component';
+import { RadioComponent } from './utils/radio/radio.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NavComponent } from './nav/nav.component';
     ButtonComponent,
     TextInputComponent,
     DateComponent,
-    NavComponent
+    NavComponent,
+    RadioComponent
   ],
   imports: [
     BrowserModule,

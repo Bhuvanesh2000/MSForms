@@ -8,6 +8,7 @@ import { TextInputComponent } from './utils/text-input/text-input.component';
 import { DateComponent } from './utils/date/date.component';
 import { NavComponent } from './nav/nav.component';
 import { RadioComponent } from './utils/radio/radio.component';
+import { ContainerComponent } from './container/container.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RadioComponent } from './utils/radio/radio.component';
     TextInputComponent,
     DateComponent,
     NavComponent,
-    RadioComponent
+    RadioComponent,
+    ContainerComponent
   ],
   imports: [
     BrowserModule,

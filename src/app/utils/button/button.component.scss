@@ -1,10 +1,12 @@
 :host button {
   display: flex;
-  padding: 10px 30px;
-  background-color: var(--secondary-background);
-  width: max-content;
-  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
   color: white;
+  background-color: var(--secondary-background);
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 30px;
   margin: 5px 0;
 
   &:hover {

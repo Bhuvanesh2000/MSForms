@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  background-color: white;
+  max-width: 70%;
+  width: 50%;
+  margin: 50px;
+  padding: 50px;
+
+  .container {
+    display: flex;
+    gap: 20px;
+
+    .field-options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}

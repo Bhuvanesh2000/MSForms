@@ -14,6 +14,7 @@ import {
 export class ButtonComponent {
   @Input() btnLabel: string = 'Button';
   @Input() btnType: string = 'button';
+  @Input() itemType: string = 'button';
   @Output() btnClick = new EventEmitter<any>();
 
   emitEvent(e: any) {

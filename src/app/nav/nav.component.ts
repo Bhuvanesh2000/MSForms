@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav.component.scss'],
 })
 
-export class NavComponent { }
+export class NavComponent {
+  handleClick(event: any) {
+    console.log("ms-nav-button-clicked");
+  }
+}

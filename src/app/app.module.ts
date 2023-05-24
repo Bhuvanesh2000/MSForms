@@ -9,6 +9,8 @@ import { DateComponent } from './utils/date/date.component';
 import { NavComponent } from './nav/nav.component';
 import { RadioComponent } from './utils/radio/radio.component';
 import { ContainerComponent } from './container/container.component';
+import { TemplateComponent } from './utils/template/template.component';
+import { LoadComponent } from './load/load.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ContainerComponent } from './container/container.component';
     DateComponent,
     NavComponent,
     RadioComponent,
-    ContainerComponent
+    ContainerComponent,
+    TemplateComponent,
+    LoadComponent
   ],
   imports: [
     BrowserModule,

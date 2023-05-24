@@ -39,7 +39,7 @@ input[type="date"] {
   border-radius: 5px;
 
   &:focus {
-    outline: 1px solid var(--primary-hover-background);
+    outline: 1px solid var(--secondary-background);
   }
 
   &:read-only {
@@ -54,6 +54,6 @@ span[type="radio"] {
   height: 15px;
   width: 15px;
   border-radius: 100%;
-  background-color: var(--gray-background);
-  border: 1px solid var(--gray-background);
+  background-color: white;
+  border: 1px solid var(--secondary-gray-background);
 }

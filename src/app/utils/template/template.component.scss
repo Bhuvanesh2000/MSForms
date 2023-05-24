@@ -1,0 +1,14 @@
+:host .template {
+  background-color: var(--gray-background);
+  padding: 20px;
+  border-radius: 5px;
+
+  .template-options {}
+
+  .template-footer,
+  .template-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

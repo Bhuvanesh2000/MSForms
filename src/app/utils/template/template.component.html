@@ -1,0 +1,20 @@
+<div class="template">
+  <div class="template-header">
+    <!-- use ButtonComponent? -->
+    <button (click)="handleDelete($event)"><code>delete</code></button>
+  </div>
+  <div class="template-question">
+    <ms-text-input [txtPlaceholder]="'Question'"></ms-text-input>
+  </div>
+  <div class="template-options">
+    <ms-load-component [compType]="templateType" [readonly]="templateType == 'radio' ? false : true"
+      [placeholder]="templateType == 'text' ? 'Enter your answer' : ''"></ms-load-component>
+    <ng-container #loadComponents></ng-container>
+  </div>
+  <div class="template-footer">
+    <code>
+      <input type="checkbox" id="required">
+      <label for="required"> Required</label>
+    </code>
+  </div>
+</div>

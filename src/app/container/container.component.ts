@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { ButtonComponent } from '../utils/button/button.component';
+import { TemplateComponent } from '../utils/template/template.component';
 
 @Component({
   selector: 'ms-container',
@@ -21,6 +22,7 @@ export class ContainerComponent implements OnInit {
 
   ngOnInit() {
     this.options.forEach((option: any) => {
+      // use loadComponent
       const comp = this.fieldOptionsRef.createComponent(ButtonComponent);
       comp.instance.btnLabel = option['label'];
       comp.instance.itemType = option['type'];
@@ -32,6 +34,13 @@ export class ContainerComponent implements OnInit {
   }
 
   createQuestionTemplateComponent(type: string) {
-    console.log(type);
+    // use loadComponent
+    const comp = this.fieldTemplatesRef.createComponent(TemplateComponent);
+    comp.instance.templateType = type;
+    comp.instance.deleteEvent.subscribe(
+      () => {
+        comp.destroy();
+      }
+    );
   }
 }
